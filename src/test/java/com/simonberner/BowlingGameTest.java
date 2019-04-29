@@ -31,9 +31,33 @@ class BowlingGameTest {
         assertEquals(12, bowlingGame.score());
     }
 
+    // 3th test
+    // Should be able to handle a strike
+    @Test
+    void testAStrike() {
+        // knock down 10 pins in the first roll of this round
+        rollStrike();
+        // knock down 8 pins in the two rolls of the next round
+        rollMany(2, 8);
+        // the total points for the round should be 18
+        assertEquals(18, bowlingGame.score());
+
+    }
+
     private void rollSpare() {
         bowlingGame.roll(2);
         bowlingGame.roll(8);
+    }
+
+    private void rollStrike() {
+        bowlingGame.roll(10);
+    }
+
+    private void rollMany(int numberOfRolls, int pins) {
+        for (int i = 0; i < numberOfRolls; i++) {
+            bowlingGame.roll(pins);
+        }
+
     }
 
 }
