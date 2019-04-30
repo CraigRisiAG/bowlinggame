@@ -1,5 +1,6 @@
 package com.simonberner;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -9,8 +10,8 @@ class BowlingGameTest {
     private BowlingGame bowlingGame = new BowlingGame();
 
     // 1st test
-    // Should be able to handle 20 simple rolls with 0 knocked down pins in each of the 10 rounds (frames)
     @Test
+    @DisplayName("Should be able to handle 20 simple rolls")
     void testSimpleRolls() {
         for (int i = 0; i < 20; i++) {
             bowlingGame.roll(0);
@@ -20,8 +21,8 @@ class BowlingGameTest {
     }
 
     // 2nd test
-    // Should be able to handle a spare
     @Test
+    @DisplayName("Should be able to handle a spare")
     void testASpare() {
         // knock down all the pins with 2 rolls
         rollSpare();
@@ -32,8 +33,8 @@ class BowlingGameTest {
     }
 
     // 3th test
-    // Should be able to handle a strike
     @Test
+    @DisplayName("Should be able to handle a strike")
     void testAStrike() {
         // knock down 10 pins in the first roll of this round
         rollStrike();
