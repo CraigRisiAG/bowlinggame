@@ -3,7 +3,13 @@
 ## Intention
 The intention of this project is to implement the [CodeKata](http://codekata.com/) [Bowling Game](http://codingdojo.org/kata/Bowling/) and thereby practicing TDD with Java.
 
-## Constraint
+## Kata description (slightly adapted by me)
+1. The game consists of 10 frames (I call them rounds). In each round a player has two rolls with a ball to knock down a maximum of 10 pins. The score per round is the total number of knocked down pins plus bonuses if the player does a spare or a strike.  
+2. A **spare** is when the player knocks down all 10 pins with two rolls in a round. The bonus for that round is the score of the next **first** roll.  
+3. A **strike** is when the player knocks down all 10 pins with the **first** roll in a round. The bonus for that round is the score of the next **two** rolls.  
+4. In the 10th round, a player who rolls a spare or a strike has a **third** extra roll to finish the round. (No more than three rolls are allowed in the 10th round).
+
+## Possible constraint
 Taking [Baby Steps](http://kata-log.rocks/baby-steps)
 
 ## Information sources

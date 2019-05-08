@@ -39,9 +39,9 @@ class BowlingGameTest {
         // knock down 10 pins in the first roll of this round
         rollStrike();
         // knock down 8 pins in the two rolls of the next round
-        rollMany(2, 8);
+        rollMany(2, 3);
         // the total points for the round should be 18
-        assertEquals(18, bowlingGame.score());
+        assertEquals(16, bowlingGame.score());
 
     }
 
