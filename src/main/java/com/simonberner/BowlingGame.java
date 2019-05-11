@@ -30,13 +30,13 @@ public class BowlingGame {
             if (isSpare(rollIndex)) {
                 score += 10 + rolls[rollIndex + 2];
                 rollIndex += 2; //move roll index forward to the first roll of the next round
-                break;
+                continue;
 
                 // If strike, then score = 10 + knocked down pins of the next two rolls
             } else if (isStrike(rollIndex)) {
                 score += 10 + rolls[rollIndex + 1] + rolls[rollIndex + 2];
                 rollIndex += 1; //move roll index forward to the first roll of the next round
-                break;
+                continue;
 
                 // Otherwise score = knocked down pins of the first and second roll of that round
             } else {
