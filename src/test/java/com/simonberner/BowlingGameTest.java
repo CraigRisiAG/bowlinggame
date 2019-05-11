@@ -45,6 +45,32 @@ class BowlingGameTest {
 
     }
 
+
+    /**
+     * 4th test: should be able to handle a perfect game (a game made just by strikes)
+     * <p>
+     * Round 1, score: 10 + 10 + 10 =30
+     * Round 2, score: 10 + 10 + 10 =30
+     * Round 3, score: 10 + 10 + 10 =30
+     * Round 4, score: 10 + 10 + 10 =30
+     * Round 5, score: 10 + 10 + 10 =30
+     * Round 6, score: 10 + 10 + 10 =30
+     * Round 7, score: 10 + 10 + 10 =30
+     * Round 8, score: 10 + 10 + 10 =30
+     * Round 9, score: 10 + 10 + 10 =30
+     * Round 10, score: 10 + 10 =20
+     * Total score possible = 290
+     * (Remember: In the 10th round, a player who rolls a STRIKE has a second extra roll to finish the round.)
+     */
+    @Test
+    @DisplayName("Should be able to handle a perfect game")
+    void testAPerfectGame() {
+        // 10 strikes in every of the 10 rounds plus 1 strike with the extra roll in the 10th round
+        rollMany(11, 10);
+        assertEquals(290, bowlingGame.score());
+
+    }
+
     private void rollSpare() {
         bowlingGame.roll(2);
         bowlingGame.roll(8);
