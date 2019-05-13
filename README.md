@@ -6,9 +6,9 @@ The intention of this project is to implement the [CodeKata](http://codekata.com
 ## Bowling game description
 1. The game consists of 10 frames (rounds). In each frame a player has two rolls with a ball to knock down a maximum of 10 pins. The score per frame is the total number of knocked down pins plus bonuses if the player does a spare or a strike.  
 2. A **spare** is when the player knocks down all 10 pins with two rolls in a frame. The bonus for that frame is the score of the next **first** roll.  
-2.1 The maximum score for a frame is 20. 10 scores from the spare in the actual frame and 10 from the strike in the next frame.
+2.1 The maximum score for a frame is 20. 10 scores for the spare in the actual frame and 10 for the strike in the next frame.
 3. A **strike** is when the player knocks down all 10 pins with the **first** roll in a frame. The bonus for that frame is the score of the next **two** rolls.  
-3.1 The maximum score for a frame is 30. 10 scores from the strike in the actual frame and 20 scores from the strikes of the next two frames. 
+3.1 The maximum score for a frame is 30. 10 scores for the strike in the actual frame and 20 scores for the strikes of the next two frames. 
 4. In the 10th frame, a player who rolls a spare or a strike has a **second** (for strike) or **third** (for spare) extra roll to finish that frame. (No more than three rolls are allowed in the 10th frame).
 
 ## Information sources
