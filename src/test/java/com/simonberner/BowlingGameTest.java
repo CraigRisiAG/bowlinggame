@@ -71,9 +71,35 @@ class BowlingGameTest {
 
     }
 
+    /**
+     * 5th test: should be able to handle a game made just by spares
+     * (where the 3th roll in the 10th frame is a strike)
+     * <p>
+     * Max. score per frame 1-9: 10 + 9 =19
+     * Max. score for frame 10: 10 + 10 =20
+     * Maximum score possible = 191
+     */
+    @Test
+    @DisplayName("Should be able to handle a perfect spare game")
+    void testAPerfectSpareGame() {
+        // 10 spares in every of the 10 frames plus 1 strike with the third extra roll in the 10th round
+        rollPerfectSpare();
+        // And an extra roll (strike) in the 10th frame
+        bowlingGame.roll(10);
+        assertEquals(191, bowlingGame.score());
+
+    }
+
     private void rollSpare() {
         bowlingGame.roll(2);
         bowlingGame.roll(8);
+    }
+
+    private void rollPerfectSpare() {
+        for (int i = 0; i < 10; i++) {
+            bowlingGame.roll(9);
+            bowlingGame.roll(1);
+        }
     }
 
     private void rollStrike() {
