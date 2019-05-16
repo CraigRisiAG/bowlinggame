@@ -25,10 +25,10 @@ class BowlingGameTest {
     void testASpare() {
         // knock down all the pins with 2 rolls
         rollSpare();
-        // 1st roll of the next round
+        // 1st roll of the next round and then finish the game
         bowlingGame.roll(2);
-        // the total point for the round should be 12
-        assertEquals(12, bowlingGame.score());
+        // the total point for the round should be 14
+        assertEquals(14, bowlingGame.score());
     }
 
     // 3th test
@@ -40,7 +40,7 @@ class BowlingGameTest {
         // knock down 8 pins in the two rolls of the next round
         rollMany(2, 3);
         // the total points for the round should be 18
-        assertEquals(16, bowlingGame.score());
+        assertEquals(22, bowlingGame.score());
 
     }
 
