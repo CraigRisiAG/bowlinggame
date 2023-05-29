@@ -1,8 +1,8 @@
 # Bowling Game Kata
-This code is based on a bowling game by Simon Berner, with only modifications made to the Unit tests portions for the sake of a workshop on unit testing. 
+The initial code for this repo was pulled from a repo by Simon Berner, with only modifications made to the Unit tests portions for the sake of a workshop on unit testing. 
 
 ## Intention
-The intention of this small project is practicing TDD with Java by implementing the [CodeKata](http://codekata.com/) [Bowling Game](http://codingdojo.org/kata/Bowling/).
+The intention of this small project is practicing unit testing by implementing the [CodeKata](http://codekata.com/) [Bowling Game](http://codingdojo.org/kata/Bowling/).
 
 ## My slightly adapted bowling game description
 1. The game consists of 10 frames (rounds). In each frame a player has two rolls with a bowling ball to knock down a maximum of 10 pins. The score per frame is the total number of knocked down pins plus bonuses if the player does a spare or a strike.  
