@@ -1,4 +1,5 @@
 # Bowling Game Kata
+This code is based on a bowling game by Simon Berner, with only modifications made to the Unit tests portions for the sake of a workshop on unit testing. 
 
 ## Intention
 The intention of this small project is practicing TDD with Java by implementing the [CodeKata](http://codekata.com/) [Bowling Game](http://codingdojo.org/kata/Bowling/).
@@ -32,6 +33,4 @@ Taking [Baby Steps](http://kata-log.rocks/baby-steps)
 ## Getting the project code
 You can get the code by hitting:
 
-    git clone https://github.com/simonberner/bowlinggame.git
-
-Or by simply [downloading the zip](https://github.com/simonberner/bowlinggame/archive/master.zip) file.
+    git clone https://github.com/CraigRisiAG/bowlinggame.git
